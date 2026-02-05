@@ -39,7 +39,7 @@ public class ProductsDetailsPage
             if(!originalWindowHandle.contentEquals(currentWindowHandle)) 
             {
                 driver.switchTo().window(currentWindowHandle);
-                //System.out.println("Switched to new tab with handle: " + currentWindowHandle);
+                System.out.println("Switched to new tab with handle: " + currentWindowHandle);
                 break;
             }
         }
