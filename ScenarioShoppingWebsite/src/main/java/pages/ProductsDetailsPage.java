@@ -27,11 +27,11 @@ public class ProductsDetailsPage
 	
 	public void viewDetails(WebDriver driver, WebDriverWait wait)
 	{
-		Set<String> allWindowHandles = driver.getWindowHandles();
-		//System.out.println("Total number of open tabs: " + allWindowHandles.size());
-		
 		String originalWindowHandle = driver.getWindowHandle();
         //System.out.println("Original window handle: " + originalWindowHandle);
+		
+		Set<String> allWindowHandles = driver.getWindowHandles();
+		//System.out.println("Total number of open tabs: " + allWindowHandles.size());
 		
 		for(String currentWindowHandle : allWindowHandles) 
 		{

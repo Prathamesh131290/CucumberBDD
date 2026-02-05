@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ProductListPage 
 {
 	WebDriver driver;
-	//Actions a = new Actions(driver);
 	
 	@FindBy (xpath="//a[@data-group='men']") 
 	private WebElement men;
@@ -33,7 +32,6 @@ public class ProductListPage
 	
 	@FindBy (xpath="//ul[@class='results-base']/li[1]/a")
 	private WebElement firstProduct;
-	
 	
 	
 	public ProductListPage(WebDriver driver)
