@@ -9,19 +9,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.AfterTest;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Utils
 {
 	public static WebDriver driver;
-	//public Actions a;
-	
 	
 	public WebDriver setUp()
 	{
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\drivers\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
 		
 		ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");

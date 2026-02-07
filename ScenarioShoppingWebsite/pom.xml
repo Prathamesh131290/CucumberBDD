@@ -4,6 +4,12 @@
   <artifactId>ScenarioShoppingWebsite</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
+  <!-- Source: https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+  <dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>6.3.3</version>
+  </dependency>
   <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
